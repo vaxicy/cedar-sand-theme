@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="Cedar & Sand Theme — deep cedar green and warm sand gold" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/banner.png">
+  <img src="docs/banner.png" alt="Cedar & Sand Theme — deep cedar green and warm sand gold" width="100%">
+</picture>
 
 # Cedar & Sand Theme
 
@@ -84,12 +88,25 @@ The complete colour table lives in [`COLOR-SPEC.md`](COLOR-SPEC.md).
 
 ### Palette
 
+Every cut carries its own colour card — surfaces first, accent last.
+
+**Light cut**
+
 | Swatch | Role | Hex |
 |---|---|---|
-| 🌲 | Cedar / forest | `#1E3B2F` |
+| 🦴 | Bone (editor) | `#F1EFE2` |
+| 🏖️ | Sand shadow (chrome) | `#DDD8C1` |
 | 🌿 | Cedar sage | `#79836C` |
-| 🏜️ | Warm sand | `#B29D6B` |
-| 🦴 | Bone | `#F1EFE2` |
+| 🌲 | Cedar / forest (status bar) | `#1E3B2F` |
+
+**Dark cut**
+
+| Swatch | Role | Hex |
+|---|---|---|
+| 🌑 | Deep cedar (chrome) | `#16291F` |
+| 🌲 | Cedar (editor) | `#1E3B2F` |
+| 🌿 | Cedar sage | `#79836C` |
+| 🏜️ | Warm sand (status bar) | `#B29D6B` |
 
 ---
 
@@ -152,12 +169,25 @@ code --install-extension cedar-sand-theme-1.0.0.vsix
 
 ### 色板
 
+每个切面各有一张色卡——从表面色到强调色。
+
+**浅色切面**
+
 | 色块 | 角色 | 色值 |
 |---|---|---|
-| 🌲 | 雪松 / 林绿 | `#1E3B2F` |
+| 🦴 | 骨白（编辑区） | `#F1EFE2` |
+| 🏖️ | 沙影（工具栏） | `#DDD8C1` |
 | 🌿 | 雪松灰绿 | `#79836C` |
-| 🏜️ | 暖沙 | `#B29D6B` |
-| 🦴 | 骨白 | `#F1EFE2` |
+| 🌲 | 雪松 / 林绿（状态栏） | `#1E3B2F` |
+
+**深色切面**
+
+| 色块 | 角色 | 色值 |
+|---|---|---|
+| 🌑 | 深雪松（工具栏） | `#16291F` |
+| 🌲 | 雪松（编辑区） | `#1E3B2F` |
+| 🌿 | 雪松灰绿 | `#79836C` |
+| 🏜️ | 暖沙（状态栏） | `#B29D6B` |
 
 ---
 
