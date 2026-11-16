@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Render the README banners (icon + wordmark + one colour card per cut).
+"""Render the README banner (icon + wordmark + one colour card per cut).
 
     py -3 scripts/generate-banner.py
 
 Output:
-    docs/banner.png       light banner (bone paper)
-    docs/banner-dark.png  dark banner (midnight cedar)
+    docs/banner.png  light banner (bone paper) with a LIGHT and a DARK colour card
 """
 
 import importlib.util
@@ -16,7 +15,6 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.dirname(HERE)
 OUT_LIGHT = os.path.join(BASE, "docs", "banner.png")
-OUT_DARK = os.path.join(BASE, "docs", "banner-dark.png")
 
 S = 2
 W, H = 1600, 420
@@ -27,13 +25,6 @@ BORDER = (217, 212, 191, 255)
 INK = (30, 59, 47, 255)
 MUTED = (122, 131, 112, 255)
 RING = (200, 194, 174, 255)
-
-# dark banner
-FOREST_BG = (22, 41, 31, 255)
-FOREST_BORDER = (46, 81, 70, 255)
-BONE_TEXT = (238, 234, 222, 255)
-MUTED_DARK = (163, 176, 160, 255)
-RING_DARK = (143, 163, 145, 255)
 
 # colour cards: one row per cut, from that cut's surfaces to its accent
 CARDS = [
@@ -112,14 +103,7 @@ def render(cands, bg, border, title_col, tag_col, ring, icon_colors, out):
 
 def main():
     cands = load_candidates()
-
     render(cands, BONE, BORDER, INK, MUTED, RING, {}, OUT_LIGHT)
-
-    # on the dark banner the cedar itself turns bone so it stays readable
-    render(cands, FOREST_BG, FOREST_BORDER, BONE_TEXT, MUTED_DARK, RING_DARK,
-           {"FOREST": (238, 234, 222, 255), "FOREST_D": (199, 192, 172, 255),
-            "SAND": (178, 157, 107, 255)},
-           OUT_DARK)
 
 
 if __name__ == "__main__":

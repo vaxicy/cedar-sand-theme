@@ -1,10 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="docs/banner.png">
-  <img src="docs/banner.png" alt="Cedar & Sand Theme — deep cedar green and warm sand gold" width="100%">
-</picture>
+<img src="docs/banner.png" alt="Cedar & Sand Theme — deep cedar green and warm sand gold" width="100%">
 
 # Cedar & Sand Theme
 
