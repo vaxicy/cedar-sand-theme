@@ -1,0 +1,13 @@
+{
+  "name": "Cedar & Sand",
+  "mood": ["cedar", "sand", "bone"],
+  "colors": {
+    "forest": "#1E3B2F",
+    "deepCedar": "#16291F",
+    "litCedar": "#3D5C49",
+    "sage": "#79836C",
+    "sand": "#B29D6B",
+    "paleSand": "#D9CBAE",
+    "bone": "#F1EFE2"
+  }
+}

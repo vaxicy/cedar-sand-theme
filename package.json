@@ -1,0 +1,48 @@
+{
+  "name": "cedar-sand-theme",
+  "displayName": "Cedar & Sand Theme",
+  "description": "A cedar forest and warm sand: deep cedar green and sand gold on bone paper in the light variant, midnight cedar with a sand status bar in the dark one.",
+  "version": "1.0.0",
+  "publisher": "lilinhuang",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "dark",
+    "cedar",
+    "sand",
+    "forest",
+    "green",
+    "sand gold",
+    "earthy"
+  ],
+  "icon": "assets/icon.png",
+  "license": "SEE LICENSE IN LICENSE",
+  "galleryBanner": {
+    "color": "#1E3B2F",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaxicy/cedar-sand-theme"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cedar & Sand Theme Light",
+        "uiTheme": "vs",
+        "path": "./themes/cedar-sand-light-color-theme.json"
+      },
+      {
+        "label": "Cedar & Sand Theme Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cedar-sand-dark-color-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --forest: #1e3b2f;
+  --deep-cedar: #16291f;
+  --lit-cedar: #3d5c49;
+  --sage: #79836c;
+  --sand: #b29d6b;
+  --pale-sand: #d9cbae;
+  --bone: #f1efe2;
+  --ink: #2a3b31;
+}
+
+.cedar-card {
+  background: var(--bone);
+  border: 1px solid var(--pale-sand);
+  border-radius: 16px;
+  color: var(--ink);
+  padding: 16px 20px;
+  box-shadow: 0 6px 20px rgba(30, 59, 47, 0.14);
+}
+
+.sand-rule {
+  background: linear-gradient(90deg, var(--forest), var(--sand));
+  height: 4px;
+  border-radius: 999px;
+}
